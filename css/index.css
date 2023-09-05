@@ -1,0 +1,451 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+a {
+    color: #ffffff;
+        font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ .whatsapp {
+     background-color: black;
+     color: white;
+     padding: 10px;
+     position: fixed;
+     /* Faz com que o elemento fique fixo na tela */
+     bottom: 10px;
+     /* Posição vertical */
+     right: 10px;
+     /* Posição horizontal */
+     z-index: 1000;
+     /* Coloca o elemento na frente de outros elementos */
+ }
+
+ .whatsapp-logo {
+    max-width: 1.4rem;
+    max-width: 1.4rem;
+    margin: 0.2rem;
+ }
+.card {
+    width: 27%;
+ 
+    min-height: 300px;
+    
+    
+    /* Você pode ajustar conforme necessário */
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.postsheetcard {
+ 
+    width: 27%;
+    height: 100%;
+    /* Você pode ajustar conforme necessário */
+    background-color: #faf3f3;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 7px 7px rgba(141, 161, 228, 0.1);
+}
+
+.modal {
+    display: none;
+   position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  background-color: transparent;
+
+    z-index: 1;
+  
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    width: 50%;
+    margin-top: 5%;
+}
+.modal-container {
+   max-height: 100%;
+    align-items: center;
+        justify-content: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:nth-child(2) {
+    background-image: url('https://img.freepik.com/fotos-gratis/computador-laptop-cinza-ligado_400718-47.jpg?w=740&t=st=1693668952~exp=1693669552~hmac=623bddf8d0b0fa3652c4921f976f0dbd68f2566658957403045fc631ae6962f2');
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    background-image: url('https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124');
+    background-color: white;
+        background-size: contain;
+    
+        background-repeat: no-repeat;
+    
+        background-position: center;
+}
+
+.card:nth-child(1) {
+    background-image: url('../img/favicon-128.png');
+    background-color: white;
+    background-size: auto;
+    /* Mantém a proporção original da imagem */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem */
+}
+.card:nth-child(4) {
+    background-image: url('https://mixpanel.com/wp-content/uploads/2021/05/Data-Stack-Hero-Census-Blog-1100x616.png');
+    background-color: rgb(31, 28, 29);
+    background-size: contain;
+    font-weight: 900;
+    
+   
+        font-size: 4rem;
+        line-height: 2.25rem;
+      
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(235, 1, 52);
+    /* Mantém a proporção original da imagem */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem */
+}
+.card:nth-child(5) {
+    background-image: url('https://helios-i.mashable.com/imagery/articles/0239epOg3uvU5s7WQfLDG4s/hero-image.fill.size_1248x702.v1623386046.png');
+    background-color: rgb(0, 0, 0);
+    background-size: contain;
+    font-weight: 900;
+
+
+    font-size: 4rem;
+    line-height: 2.25rem;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(235, 159, 45);
+    /* Mantém a proporção original da imagem */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem */
+}
+
+/* E assim por diante para os outros cartões */
+.card:nth-child(6) {
+    background-image: url('https://www.tshirtgeek.com.br/wp-content/uploads/2021/09/com037-scaled.jpg');
+    background-color: rgb(0, 0, 0);
+    background-size: contain;
+    font-weight: 900;
+
+
+    font-size: 4rem;
+    line-height: 2.25rem;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(235, 159, 45);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.card:nth-child(9) {
+    background-image: url('http://www.cebinet.com.br/imagens/logo-cebi--laranja.png');
+    background-color: white;
+
+    font-weight: 900;
+    max-width:40%;
+    height: auto;
+   
+    font-size: 4rem;
+    line-height: 2.25rem;
+    margin-left: 475;
+    margin-right: 475;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(235, 159, 45);
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.icon-card {
+    /* Estilos existentes da classe card, se necessário */
+    justify-content: center;
+    /* Espaçamento ao redor dos ícones */
+}
+
+.icon {
+ width: 25%;
+ height: 30%;
+    /* Mantém a proporção */
+}
+.github {
+    width: 24%;
+    height: 30%;
+
+}
+
+.main-title {
+    align-items: center;
+    text-align: center;
+}
+
+.postsheetText {
+    font-weight: 900;
+    width: 27%;
+    margin-top: 50%;
+    font-size: 1.875rem ;
+    line-height: 2.25rem ;
+   
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.modal-header {
+    cursor: move;
+    /* ícone de movimento */
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.modal-content ul {
+    list-style: none;
+}
+
+.modal-content ul li {
+    margin: 0.5rem 0;
+}
+
+.modal-content ul li a {
+    color: #0077cc;
+    /* Cor dos links */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+.modal-content ul li a:hover {
+    text-decoration: underline;
+    /* Sublinha quando o mouse passa */
+}
+
+.presentation-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.title {
+    font-size: 21px;
+}
+
+.joe-block {
+    background-color: white;
+    color: black;
+    margin-left: 107px;
+    margin-right: 40px
+    
+}
+
+.joe {
+    color: rgb(255, 103, 43);
+}
+
+.hidden {
+    display: none;
+}
+
+.sqlBox {
+    margin-top:1rem;
+    width: 40rem;
+    height: 50rem;
+    overflow-y: auto;
+    background-color: #aaa;
+    color: rgb(49, 168, 1);
+    font-size: 1.2em;
+    align-self: center;
+
+}
+
+.presentation-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.presentation-image-usa {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+.CEBI-image {
+ 
+    width: 100px;
+    height: 100px;
+
+    
+    top: 0;
+    right: 0;
+}
+
+.presentation-text {
+   
+    
+        /* Preserva quebras de linha e espaços */
+       
+    margin-top: 10px;
+  
+}
+.large-text {
+    max-width: 90%;
+    margin:5%;
+   
+   
+}
+
+
+.small-text {
+    font-size: 0.6rem;
+  
+}
+.showSqlBtn {
+    width: 9rem;
+    height: 2rem;
+    align-self: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+box-shadow: 0px 4px 19px rgba(166, 10, 228, 0.5);
+border: none;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    background-color: #2c2c2c;
+    /* Cores mais escuras */
+    color: #fff;
+    /* Cor de texto branca */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px;
+}
+
+.contact,
+.about {
+    width: calc(100% / 3 - 16px);
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 7px;
+   
+}
+
+
+
+
+
+.about {
+    
+    margin-top: 50px;
+}
+.main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-contact,
+.input-email {
+    width: 170%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    /* Aparência mais séria */
+}
+
+.input-email {
+    min-height: 100px;
+    resize: vertical;
+    /* Permite que o usuário ajuste a altura verticalmente */
+}
+
+.submit-button {
+    background-color: #555;
+    /* Cores mais escuras */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #777;
+}
+.presentation-block {
+    flex: 27%;
+    max-width: 27%;
+   
+}
+

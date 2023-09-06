@@ -407,6 +407,15 @@ ORDER BY A.DATA_AGENDADA`
     sqlBox.value = sqlStrings[index];
 }
 
+ function changeLanguage(selectedLang) {
+          
+            if (selectedLang === 'en') {
+                window.location.href = 'indexEnglish.html';
+            } else {
+               window.location.href = 'index.html';
+            }
+        }
+
 document.addEventListener("DOMContentLoaded", function () {
   // Carrega a função dragModal somente após o DOM estar completamente carregado
   dragModal(document.getElementById("modal1"), "modalHeader1");

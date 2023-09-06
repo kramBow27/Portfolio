@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Henrique Luna - Developer</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-subtitle">
+            <h1 class="main-title">Full-Stack Developer</h1>
+            <h3>São Paulo - SP - Brazil - 2023 - Henrique Luna</h3>
+        </div>
+        <div class="languages">
+            <h5>Change language</h5>
+            <img src="https://freesvg.org/img/brazil.png" alt="Portugês" onclick="changeLanguage('pt')" value="pt" />
+        </div>
+    </header>
+    <h6 class="main-title">Click on the cards below for more information</h6>
+    <div class="container">
+
+
+
+
+
+
+        <div class="card-container">
+            <a target="_blank" onclick="openModal('modal1')" class="card"><span
+                    class="postsheetText">PostSheet</span></a>
+            <div onclick="openModal('modal5')" target="_blank" class="card icon-card">
+                <img src="./img/GitHub_Logo_White.png" alt="GitHub Logo" class="github">
+                <img src="./img/github-mark-white.svg" alt="GitHub Mark" class="icon">
+            </div>
+
+
+            <a target="_blank" onclick="openModal('modal6')" class="card"></a>
+
+
+
+            <div class="card" onclick="openModal('modal3')">Stack</div>
+            <div class="card" onclick="openModal('modal2')"></div>
+            <div class="card" onclick="openModal('modal4')"></div>
+            <div class="presentation-block">
+                <h1>Who am I</h1>
+                <div class="presentation-text">
+
+                    <img class="presentation-image" src="./img/imagem_minha.png " alt=" Presentation Image">
+
+
+                    Hello, nice to meet you, my name is Henrique Luna, I am a full-stack developer and, although I am
+                    still in academic training, I already have experience working with a variety of technologies. I am
+                    accustomed to readjustments that imply changes in the work environment or in the tools used, because
+                    above all, I always seek to develop my logic and decision-making skills.
+                    <br />
+                    <br />
+                    Currently, I am interning at the company CEBI and working as a full-stack developer on a foreign
+                    project. In this project, I have been the only active developer for almost a year. (See project
+                    details below.)
+
+                    I am also pursuing bachelors in Computer Science and Mathematics. I really like to keep myself
+                    updated and, regardless of the circumstances, I am also in constant learning.
+                    <br />
+                    <br />
+                    My main goal is to contribute, with everything I have to offer, to the technological development of
+                    our civilization. I believe that the real impact of technology is directly on the way we live and
+                    interact with the world.
+
+                    You will find more details about the stack I work with in the section below.
+                </div>
+            </div>
+            <div class="presentation-block joe-block">
+                <h1 class="title">Letter from:</h1>
+                <h3 class="joe">@JoePostSheet - PostSheet - CEO</h3>
+                <h5>NY, New York - USA</h5>
+                <a href="https://www.linkedin.com/in/joe-postsheet-%F0%9F%9A%80-3365ba242/">
+                    <h6>LinkedIn @Joe</h6>
+                </a>
+                <a href="https://postsheetblog.com/">
+                    <h6>PostSheet Blog</h6>
+                </a>
+
+                <div class="img-container">
+                    <img class="presentation-image-usa" src="./img/icons8-usa-96.png " alt=" Presentation Image">
+                </div>
+                <p class="presentation-text">
+                    Henrique has been great to work with. Simply put, he is extremely hard-working, capable of solving
+                    complex problems, thinks with the end-user in mind, and is fantastic in English communication.
+                    <br />
+                    <br />
+                    Through our interactions, he has been very studious, quickly learning on his own initiative and is
+                    self-motivated to learn as much as he can. We managed to release product improvements at a rate 40%
+                    faster than other contracted engineers.
+
+                    His code is clean and gets things done quickly. He has a fantastic eye for understanding the
+                    end-user experience and proactively offers thoughtful contributions. Henrique's English is great and
+                    very fluent at this point.
+                    <br />
+                    <br />
+                    I would strongly recommend Henrique and believe that anyone who hires him will find someone who will
+                    be a great addition for many years to come!
+                </p>
+            </div>
+
+            <div class="card" onclick="openModal('modal7')"></div>
+        </div>
+
+        <div class="presentation-section">
+
+
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader1"></div>
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h1>PostSheet - Effortlessly send personalized emails & text messages</h1>
+                <h2 onclick="closeModal7('modal7')">Click here to see the testimony of Joe - CEO of PostSheet</h2>
+                <p class="postsheetmodal">
+                    PostSheet is a North American web application built in a node.js environment with TypeScript,
+                    rendering
+                    with EJS. It simply enables the sending of emails through data templates. The application obtains
+                    information from tables (.CSV, .XLS, GoogleSheets, Airtable, .XLSX), bringing an identifier from the
+                    first row of the table and associating the data from the other rows to their respective columns.
+                    <br /><br />
+                    Finally, this data can be used to construct personalized emails according to the data obtained in
+                    the
+                    tables related to each recipient.
+                    <br /><br />
+                    PostSheet is a project that has been developed by a series of full-stack developers, but never more
+                    than
+                    one at a time. Currently, I am the fourth developer to work on the project but the one who has
+                    worked
+                    the longest.
+                    <br /><br />
+                    The application is used by some renowned institutions like "The City University of New York" and
+                    "Stanford University" and is still under development. The latest implementations carried out by me
+                    were:
+                    - Allowing .CSV and .XLS as data sources for campaign creation
+                    - Stripe integration for user redirection to the portal
+                    - Front-end modifications/adjustments
+                    <br /><br />
+                    Several bug fixes were also made that had been left in previous versions. Due to the current
+                    priority to
+                    meet deadlines for the release of new features, I chose not to change the stack. However, a
+                    migration
+                    from front-end EJS to React is being carried out in parallel, which will also necessitate the
+                    creation
+                    of a new back-end since EJS is a server-side-rendering technology and React is client-side.
+                    <br /><br />
+                    Even if we had adopted the approach of "React Server-Side Rendering", substantial changes would
+                    still
+                    have to be made in the back-end anyway. Therefore, seizing the opportunity, we will restructure the
+                    entire project so that future implementation of features involving complex data-analysis functions
+                    does
+                    not become exhausting and complicated.
+                    <br /><br />
+                    Access PostSheet at the link below
+                    <a href="https://postsheet.com">https://postsheet.com</a>
+                    <br />
+                <h5>I was hired for PostSheet on Upwork job platform</h5>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader2"></div>
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h3>Social Media and Resume:</h3>
+                <ul>
+                    <li><a href="https://github.com/kramBow27" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/henrique-luna-a654ba246/" target="_blank">LinkedIn</a></li>
+                    <li><a href="./curriculoHenriqueLuna.pdf" download>Download Resume</a></li>
+                </ul>
+                <h3>Availability:</h3>
+                <ul>
+                    <li>Available at all times</li>
+                    <li>Available to work in other regions of São Paulo</li>
+                    <li>Available for On-site Work</li>
+                    <li>Available for Contract Work</li>
+                    <li>Available for New Internships</li>
+                </ul>
+                <br />
+                <p>Currently pursuing bachelor's degrees in Computer Science (FMU) and Mathematics (Cruzeiro do Sul).
+                </p>
+                <p>To the recruiter: I am currently interning at CEBI, but if the job opening is for an internship and
+                    you
+                    received this portfolio, it means I am willing to leave my current position for the experience of
+                    working at your company.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader4"></div>
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <div class="sql-section">
+                    <h2>Queries and Reports</h2>
+
+                    <br />
+                    <br />
+
+                    <h3>Query for Open Document Statistics</h3>
+
+                    <div class="button-container">
+                        <button class="showSqlBtn" onclick="showSql(this, 0)">Click to show</button>
+                        <textarea class="sqlBox hidden" readonly></textarea>
+                    </div>
+                    <h3>Query for User Service Statistics</h3>
+
+                    <div class="button-container">
+                        <button class="showSqlBtn" onclick="showSql(this, 1)">Click to show</button>
+                        <textarea class="sqlBox hidden" readonly></textarea>
+                    </div>
+                </div>
+
+                <h6> Reports have also been created in Stimulsoft Reports for these queries;
+                    <br />
+                    <br />
+                    Many other queries are in the production environment as well, but for brevity, I've included
+                    only those that best demonstrate my skills
+                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader3"></div>
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h2>Technologies</h2>
+                <h3>Programming Languages:</h3>
+                <p>C#, Java, TypeScript, JavaScript</p>
+                <h3>Front-end Libraries:</h3>
+                <p>Angular, React, Ejs</p>
+                <h3>Databases:</h3>
+                <p>PostgreSQL, SQL (Oracle)</p>
+                <h3>Familiarity with:</h3>
+                <p>AWS(S3 Storage and RDS), Git, Google API, Stimulsoft Reports, Heroku, Cloudflare, Stripe, Ngrok,
+                    BitBucket</p>
+
+                <p>Currently pursuing bachelor's degrees in Computer Science (FMU) and Mathematics (Cruzeiro do Sul).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader5"></div>
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <h2>GitHub</h2>
+                <br />
+                <br />
+                <p>The link below will direct you to a GitHub repository containing codes written by me.
+                    You will find codes written in C#, Java(Android), JavaScript, TypeScript, as well as
+                    examples of using the Framework
+                    angular.js.
+                    All codes in this repository are already in a production environment, that is, in use.
+                    I have not included any code that was not written by me or that contained sensitive information.
+                </p>
+                <br />
+                <br />
+                <a href="https://github.com/kramBow27/Amostras-main-Com-Java--main">Code Samples in Production
+                    Environment</a>
+                <br />
+                <br />
+                <p>
+                    Inside the folder "Java (Transcription of C#)" there are no codes that are in a production
+                    environment,
+                    but
+                    it is a study that
+                    I decided to undertake, "translating"
+                    the code and project structure from .NET to a Java environment with Spring. The codes in this
+                    folder are solely for the purpose of
+                    developing my skills within the Java environment and are still ongoing.
+                </p>
+                <br />
+                <br />
+                <a href="https://github.com/kramBow27/Amostras-main-Com-Java--main">Java Code Samples</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader5"></div>
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <h2>React</h2>
+                <p>The project in the link below is a personal project that I started to develop from a Figma template
+                    sent
+                    by a friend. Initially, the idea was to just study React and Styled Components, but I ended up
+                    opting
+                    to start building
+                    a full-stack application, whose goal will be to allow users to create personalized quizzes, connect
+                    with
+                    their friends,
+                    share, debate, and have fun.
+                    <br />
+                    <br />
+                    <a alt="/404" href="https://github.com/kramBow27/QuizzReactApp">QuizzReactApp</a>
+                    <br />
+                    <br />
+
+                    Young people will be able to create fun quizzes with their
+                    friends, and adults can share knowledge while the more politicized
+                    can invest their time arguing in defense of their opinions.
+                    For now, the application is still in the initial stages of development, but it already has a
+                    pre-configured
+                    and functional full-stack structure.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader7"></div>
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <h2>CEBI - Industrial Banking Electronic Center (Full Stack .NET/Angular)</h2>
+
+                Currently interning at CEBI, a company that provides integrated system services for public agencies,
+                I have implemented various features that are already in a production environment and being used by
+                clients
+                (mostly municipal governments in the interior of the state of São Paulo).
+                At CEBI, we work as a team and organize schedules through the Scrum methodology, where tasks are
+                updated every 15 days.
+                <b>The main stack used is:</b>
+                <ul>
+                    <li>-C# with .NET Framework</li>
+                    <li>-Git</li>
+                    <li>-Angular.js</li>
+                    <li>-Oracle Database</li>
+                    <li>-Android Studio (Java)</li>
+                </ul>
+                <br />
+                <br />
+                I have actively participated in over 50 implementations, all of which were successful and completed on
+                time.
+                <b>Among them, I can mention:</b>
+                <ul>
+                    <li>- Creation of APIs for HTTP calls (GET, POST, PUT, DELETE);</li>
+                    <li>- Homologation of the work order generation application for Android 13;</li>
+                    <li>- Interactions with the database and execution of SQL commands;</li>
+                    <li>- Creation of new entities and their respective mapping with the database;</li>
+                    <li>- Implementation of features for sending GPS coordinates and displaying them on the map;</li>
+                    <li>- Creation of new menus and sections in systems;</li>
+                    <li>- Creation of queries for generating new reports;</li>
+                    <li>- Error handling (both on the server and client);</li>
+                    <li>- Implementation of methods for executing procedures in PL/SQL;</li>
+                    <li>- Creation of new filters for queries, all generated by dynamic fields;</li>
+                    <li>- Bug fixes;</li>
+                </ul>
+                <br />
+                <br />
+                At CEBI, I have learned (and continue to learn) a lot through the cooperation of my more experienced
+                colleagues, so much so that
+                I have been granted enough trust to work as the only .NET and Java(Android) developer on the team that
+                handles
+                customer service and work order management systems.
+            </div>
+        </div>
+    </div>
+    <div class="contact-section">
+        <div class="contact">
+            <h1 class="main-title">Send me an email</h1>
+            <form action="mailto:info.vluna@yahoo.com" method="post" enctype="text/plain">
+                <label for="username">Your Name and/or Company:</label><br>
+                <input type="text" class="input-contact" id="username" name="username"><br>
+
+                <label for="useremail">Your Email:</label><br>
+                <input type="email" class="input-contact" id="useremail" name="useremail"><br>
+
+                <!-- <label for="message">Message:</label><br>
+            <textarea id="message" class="input-email" name="message"></textarea><br> --> -->
+
+                <input type="submit" value="Send">
+            </form>
+        </div> -
+        <div class="about">
+            <div class="small-text">
+                <h2>About this portfolio:</h2>
+                <h3 class="joe">Made with basic HTML/CSS/JavaScript</h3>
+                <h4>Why?</h4>
+                <div class="img-container">
+
+                </div>
+                <p class="presentation-text">
+                    The goal of this portfolio is to be practical and informative. To lead the recruiter to my projects
+                    in a simple way. I tried to emphasize the information and projects that demonstrate my actual
+                    skills.
+                    <br />
+                    <br />
+                    If you received this portfolio, know that I highly value your company, as I am currently looking to
+                    establish myself in a place where I can see a greater and more noble objective than just being paid.
+                    Working with technology is building the future, and that is priceless.
+                    <br />
+                    <br />
+            </div>
+        </div>
+
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=55011992743584" target="_blank">Send a
+            message on WhatsApp<img alt="wapp logo" class="whatsapp-logo"
+                src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png"></a>
+
+
+
+        <script src="./javascript/index.js"></script>
+</body>
+
+</html>

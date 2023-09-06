@@ -38,6 +38,42 @@ a {
      /* Coloca o elemento na frente de outros elementos */
  }
 
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #030303;
+     padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .title-subtitle {
+     text-align: center;
+ }
+
+ .main-title,
+ h3 {
+     margin: 0;
+     padding: 0;
+ }
+
+ .languages {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ .languages h5 {
+     margin-bottom: 10px;
+ }
+
+ .languages img {
+     width: 32px;
+     height: auto;
+     cursor: pointer;
+     margin-left: 5px;
+ }
+
  .whatsapp-logo {
     max-width: 1.4rem;
     max-width: 1.4rem;
@@ -232,6 +268,7 @@ a {
 }
 
 .main-title {
+   
     align-items: center;
     text-align: center;
 }

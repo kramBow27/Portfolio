@@ -133,7 +133,38 @@ a {
     background-color: #444;
     color: #fff;
     width: 50%;
-    margin-top: 5%;
+    margin-top: 8%;
+    margin-left: 20%
+}
+.modal-content-cebi {
+    margin: 15% auto;
+    padding: 20px;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    width: 50%;
+    margin-top: 55%;
+    margin-left: 20%
+}
+.modal-content-sql {
+    margin: 15% auto;
+    padding: 20px;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    width: 50%;
+    margin-top: 35%;
+    margin-left: 20%
+}
+.modal-content-react {
+    margin: 15% auto;
+    padding: 20px;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    width: 50%;
+    margin-top: 26%;
+    margin-left: 20%
 }
 .modal-container {
    max-height: 100%;

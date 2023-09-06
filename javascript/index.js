@@ -443,3 +443,46 @@ document.addEventListener("DOMContentLoaded", function () {
     dragModal(document.getElementById("modal6"), "modalHeader6");
      dragModal(document.getElementById("modal7"), "modalHeader7");
 });
+
+// Variável para armazenar o conteúdo original em português
+let originalJoeBlock = null;
+
+// Variável para armazenar o conteúdo em inglês
+let englishJoeBlock = null;
+
+function changeLanguageJoe(selectedLang) {
+   console.log("fui clicado")
+  const joeBlockElement = document.getElementById('joeBlock');
+
+  if (selectedLang === 'en') {
+    if (englishJoeBlock === null) {
+      fetch('indexEnglish.html')
+        .then(response => response.text())
+        .then(data => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(data, 'text/html');
+          englishJoeBlock = doc.querySelector('.joe-block').outerHTML;
+          
+          // Salva o conteúdo original antes de alterá-lo
+          originalJoeBlock = joeBlockElement.outerHTML;
+
+          // Altera o conteúdo
+          joeBlockElement.outerHTML = englishJoeBlock;
+        })
+        .catch(error => {
+          console.error('Erro ao buscar o arquivo indexEnglish.html: ', error);
+        });
+    } else {
+      // Salva o conteúdo original antes de alterá-lo
+      originalJoeBlock = joeBlockElement.outerHTML;
+
+      // Altera o conteúdo
+      joeBlockElement.outerHTML = englishJoeBlock;
+    }
+  } else {
+    if (originalJoeBlock !== null) {
+      // Reverte para o conteúdo original
+      joeBlockElement.outerHTML = originalJoeBlock;
+    }
+  }
+}

@@ -266,6 +266,42 @@ a {
     height: 30%;
 
 }
+.button-send {
+    background-color: #1E1E1E;
+    /* Cor de fundo escuro */
+    color: #FFFFFF;
+    /* Cor do texto */
+    padding: 12px 24px;
+    /* Espaçamento interno */
+    border: none;
+    /* Remover borda padrão */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efeito de transição */
+}
+
+.button-send:hover {
+    background-color: #4A4A4A;
+    /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de crescimento ao passar o mouse */
+}
+
+.button-send:active {
+    background-color: #000000;
+    /* Cor de fundo ao clicar */
+    transform: scale(1);
+    /* Voltar ao tamanho original ao clicar */
+}
+
+.black {
+    color: black;
+}
 
 .main-title {
    

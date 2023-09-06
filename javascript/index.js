@@ -399,13 +399,30 @@ DECODE(A.STATUS,
   AND A.DATA_TERMINO_ATENDIMENTO IS NOT NULL
 ORDER BY A.DATA_AGENDADA`
     ];
+function sendEmail() {
+    console.log("entrou na função")
+    try {
+        const username = encodeURIComponent(document.getElementById('username').value);
+        const useremail = encodeURIComponent(document.getElementById('useremail').value);
+        const message = encodeURIComponent(document.getElementById('message').value);
+        
+        const subject = `Message from ${username}`;
+        const body = `${message}`;
+        
+        // Verificando se o e-mail do usuário é um Gmail
+       if (useremail.endsWith('gmail.com')) {
+           console.log("entrou na função google")
+            window.location.href = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=info.vluna@yahoo.com&su=${subject}&body=${message}`;
 
-  function showSql(buttonElement, index) {
-    console.log("Botão clicado ", index);
-    const sqlBox = buttonElement.nextElementSibling;
-    sqlBox.classList.toggle('hidden');
-    sqlBox.value = sqlStrings[index];
+       } else {
+          console.log("entrou na função outro email")
+            window.location.href = `mailto:info.vluna@yahoo.com?subject=${subject}&body=${body}`;
+        }
+    } catch (e) {
+        alert("Não foi possível abrir o cliente de e-mail. Por favor, envie um e-mail manualmente para info.vluna@yahoo.com");
+    }
 }
+
 
  function changeLanguage(selectedLang) {
           

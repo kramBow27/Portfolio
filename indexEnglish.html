@@ -12,6 +12,8 @@
         <div class="title-subtitle">
             <h1 class="main-title">Full-Stack Developer</h1>
             <h3>São Paulo - SP - Brazil - 2023 - Henrique Luna</h3>
+            <h6>*This portfolio was made to be simple.</h6>
+            <h6>**You can get my resume clicking on the LinkedIn card below.</h6>
         </div>
         <div class="languages">
             <h5>Change language</h5>
@@ -73,26 +75,26 @@
             <div class="presentation-block joe-block">
                 <h1 class="title">Letter from:</h1>
                 <h3 class="joe">@JoePostSheet - PostSheet - CEO</h3>
-                <h5>NY, New York - USA</h5>
                 <a href="https://www.linkedin.com/in/joe-postsheet-%F0%9F%9A%80-3365ba242/">
-                    <h6>LinkedIn @Joe</h6>
+                    <h6 class="black">LinkedIn @Joe</h6>
                 </a>
-                <a href="https://postsheetblog.com/">
-                    <h6>PostSheet Blog</h6>
+                <a class="black" href="https://postsheetblog.com/">
+                    <h6 class="black">PostSheet Blog</h6>
                 </a>
 
                 <div class="img-container">
                     <img class="presentation-image-usa" src="./img/icons8-usa-96.png " alt=" Presentation Image">
                 </div>
                 <p class="presentation-text">
-                    Henrique has been great to work with. Simply put, he is extremely hard-working, capable of solving
-                    complex problems, thinks with the end-user in mind, and is fantastic in English communication.
+                    Henrique has been great to work with. Simply put he is extremely hard working, able to problem solve
+                    complex problems,
+                    thinks with the end user in mind, fantastic with communication in English.
                     <br />
                     <br />
                     Through our interactions, he has been very studious, quickly learning on his own initiative and is
                     self-motivated to learn as much as he can. We managed to release product improvements at a rate 40%
-                    faster than other contracted engineers.
-
+                    faster than other engineers hired.
+                    <br /><br />
                     His code is clean and gets things done quickly. He has a fantastic eye for understanding the
                     end-user experience and proactively offers thoughtful contributions. Henrique's English is great and
                     very fluent at this point.
@@ -174,7 +176,13 @@
                 <ul>
                     <li><a href="https://github.com/kramBow27" target="_blank">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/henrique-luna-a654ba246/" target="_blank">LinkedIn</a></li>
-                    <li><a href="./curriculoHenriqueLuna.pdf" download>Download Resume</a></li>
+                    <li><a href="./resumeHenriqueLuna.pdf" download>Download Resume</a></li>
+                    <li>Email: info.vluna@yahoo.com</li>
+                    <br />
+                    <h5>You can get the portuguese version of this resume switching the website language at the top of
+                        the
+                        page</h5>
+
                 </ul>
                 <h3>Availability:</h3>
                 <ul>
@@ -191,6 +199,8 @@
                     you
                     received this portfolio, it means I am willing to leave my current position for the experience of
                     working at your company.</p>
+                <br />
+
             </div>
         </div>
     </div>
@@ -282,7 +292,7 @@
                 </p>
                 <br />
                 <br />
-                <a href="https://github.com/kramBow27/Amostras-main-Com-Java--main">Java Code Samples</a>
+
             </div>
         </div>
     </div>
@@ -369,19 +379,47 @@
     <div class="contact-section">
         <div class="contact">
             <h1 class="main-title">Send me an email</h1>
-            <form action="mailto:info.vluna@yahoo.com" method="post" enctype="text/plain">
+            <form id="contact-form" onsubmit="sendEmail(); return false;">
                 <label for="username">Your Name and/or Company:</label><br>
                 <input type="text" class="input-contact" id="username" name="username"><br>
 
                 <label for="useremail">Your Email:</label><br>
                 <input type="email" class="input-contact" id="useremail" name="useremail"><br>
 
-                <!-- <label for="message">Message:</label><br>
-            <textarea id="message" class="input-email" name="message"></textarea><br> --> -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" class="input-email" name="message"></textarea><br>
 
-                <input type="submit" value="Send">
+                <input class="button-send" type="submit" value="Send">
             </form>
-        </div> -
+        </div>
+
+        <script>
+            function sendEmail() {
+                const username = encodeURIComponent(document.getElementById('username').value);
+                const useremail = encodeURIComponent(document.getElementById('useremail').value);
+                const message = encodeURIComponent(document.getElementById('message').value);
+
+                const subject = `Message from ${username}`;
+                const body = `From: ${username}, Email: ${useremail}\n\nMessage:\n${message}`;
+
+                window.location.href = `mailto:info.vluna@yahoo.com?subject=${subject}&body=${body}`;
+            }
+        </script>
+
+
+        <script>
+            function sendEmail() {
+                const username = encodeURIComponent(document.getElementById('username').value);
+                const useremail = encodeURIComponent(document.getElementById('useremail').value);
+                const message = encodeURIComponent(document.getElementById('message').value);
+
+                const subject = `Message from ${username}`;
+                const body = `From: ${username}, Email: ${useremail}\n\nMessage:\n${message}`;
+
+                window.location.href = `mailto:info.vluna@yahoo.com?subject=${subject}&body=${body}`;
+            }
+        </script>
+
         <div class="about">
             <div class="small-text">
                 <h2>About this portfolio:</h2>

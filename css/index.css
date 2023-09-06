@@ -231,8 +231,8 @@ a {
     background-position: center;
    
 }
-.card:nth-child(9) {
-    background-image: url('http://www.cebinet.com.br/imagens/logo-cebi--laranja.png');
+.card-cebi {
+    background-image: url('../img/logo-cebi--laranja.png');
     background-color: white;
 
     font-weight: 900;

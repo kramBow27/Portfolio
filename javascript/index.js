@@ -398,7 +398,14 @@ DECODE(A.STATUS,
   AND A.DATA_INICIO_ATENDIMENTO IS NOT NULL
   AND A.DATA_TERMINO_ATENDIMENTO IS NOT NULL
 ORDER BY A.DATA_AGENDADA`
-    ];
+];
+    
+ function showSql(buttonElement, index) {
+    console.log("Botão clicado ", index);
+    const sqlBox = buttonElement.nextElementSibling;
+    sqlBox.classList.toggle('hidden');
+    sqlBox.value = sqlStrings[index];
+}
 function sendEmail() {
     console.log("entrou na função")
     try {

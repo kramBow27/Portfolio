@@ -133,7 +133,17 @@ a {
     background-color: #444;
     color: #fff;
     width: 50%;
-    margin-top: 8%;
+    margin-top: 25%;
+    margin-left: 20%
+}
+.modal-content-postsheet {
+    margin: 15% auto;
+    padding: 20px;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    width: 50%;
+    margin-top: 25%;
     margin-left: 20%
 }
 .modal-content-cebi {
@@ -143,7 +153,7 @@ a {
     background-color: #444;
     color: #fff;
     width: 50%;
-    margin-top: 55%;
+    margin-top: 65%;
     margin-left: 20%
 }
 .modal-content-sql {
